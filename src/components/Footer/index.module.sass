@@ -1,0 +1,79 @@
+.footer
+  margin-top: 150px 
+  background-color: #000
+  border-radius: 20px
+  color: #fff
+  text-align: center
+  padding: 10px 0px 20px
+  @media (min-width: 620px)
+    padding: 50px 0px 20px
+  
+
+.top
+  margin-bottom: 40px
+
+.logo
+  width: 95%
+  height: auto
+
+.bottom
+  padding-top: 20px
+  display: flex
+  flex-direction: column
+  
+  justify-content: space-between
+  gap: 12px
+  font-size: 14px
+  @media (min-width: 620px)
+    flex-direction: row
+    
+
+.left
+  display: flex
+  flex-wrap: wrap
+  
+  gap: 16px
+
+  p
+    margin: 0
+    opacity: 0.8
+
+  a
+    color: #fff
+    text-decoration: none
+    font-weight: 500
+    transition: color 0.2s ease
+
+    &:hover
+      color: #e6007e
+
+.socials
+  display: flex
+  gap: 12px
+
+.icon
+  background-color: #3d3b3b
+  width: 32px
+  height: 32px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 8px
+  img
+    width: 16px
+    height: 16px
+    filter: brightness(0) invert(1)
+    transition: filter 0.2s ease
+
+  &:hover img
+    filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(6722%) hue-rotate(315deg) brightness(97%) contrast(98%)
+
+
+.mobile
+  display: flex
+  @media (min-width: 620px)
+    display: none
+.desctop
+  display: none
+  @media (min-width: 620px)
+    display: flex

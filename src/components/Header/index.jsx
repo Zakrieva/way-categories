@@ -3,7 +3,7 @@ import logo from "../../assets/svg/logo.svg";
 import styles from "./index.module.sass";
 const Header = () => {
   return (
-    <div>
+    <div className="wrapper">
       <div className={styles.header}>
         <img src={logo} alt="" className={styles.logo} />
         <div className={styles.nav}>

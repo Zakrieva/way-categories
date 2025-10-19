@@ -4,7 +4,6 @@ import styles from "./index.module.sass";
 const About = () => {
   return (
     <div className={styles.about}>
-      <img src="" alt="" />{" "}
       <div className={styles.title}>
         <h1>WayCatering: Вкус и стиль для любого события!</h1>
         <p>
