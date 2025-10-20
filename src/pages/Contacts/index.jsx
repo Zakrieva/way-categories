@@ -19,15 +19,15 @@ const Contacts = () => {
             <ul className={s.list}>
               <li>
                 <span>ИП</span>
-                <span>Магомедов Адам Увайсович</span>
+                <span>Магомадов Адам Увайсович</span>
               </li>
               <li>
                 <span>ИНН</span>
-                <span>201045745200</span>
+                <span>201405745200</span>
               </li>
               <li>
                 <span>ОГРНИП</span>
-                <span>32120000030880</span>
+                <span>321200000030880</span>
               </li>
               <li>
                 <span>Email</span>

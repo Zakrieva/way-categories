@@ -1,29 +1,39 @@
 $accent: #E6007E
-$text: #000
-$gray: #999
-$border: #E6E6E6
+$text: #CED3D6
+$border:#CED3D6
 $bg: #fff
 
 .contacts
   padding: 40px 0 70px
 
 .subtitle
-  font-size: 18px
+  font-size: 40px
   color: $accent
   margin-bottom: 8px
-  font-weight: 600
+  font-weight: 500
+  @media (min-width: 620px)
+    font-size: 32px
+  @media (min-width: 1100px)
+    font-size: 40px
 
 .title
-  font-size: 22px
-  font-weight: 700
-  color: $text
-  margin-bottom: 8px
-  @media (min-width: 768px)
-    font-size: 26px
+  font-size: 40px
+  font-weight: 500
+  color: #000
+  margin-bottom: 24px
+  margin-top: 45px
+  @media (min-width: 620px)
+    font-size: 32px
+    margin-bottom: 15px
+    margin-top: 32px
+  @media (min-width: 1100px)
+    font-size: 40px
+    margin-bottom: 20px
+    margin-top: 24px
 
 .text
-  font-size: 14px
-  color: #333
+  font-size: 16px
+  color: #969FA3
   max-width: 600px
   margin-bottom: 24px
   line-height: 1.4
@@ -32,6 +42,7 @@ $bg: #fff
   display: grid
   gap: 16px
   margin-bottom: 20px
+  
   @media (min-width: 900px)
     grid-template-columns: 1fr 1fr
     gap: 20px
@@ -40,24 +51,24 @@ $bg: #fff
   background: $bg
   border: 1px solid $border
   border-radius: 10px
-  padding: 14px 16px
+  padding: 24px
 
 .cardTitle
-  font-size: 14px
-  font-weight: 700
-  color: $text
+  font-size: 24px
+  font-weight: 600
+  color: #000
   margin-bottom: 12px
 
 .note
-  font-size: 13px
-  color: $gray
+  font-size: 16px
+  color: #000
   line-height: 1.4
-  margin-bottom: 12px
+  margin-bottom: 24px
 
 .list
   display: flex
   flex-direction: column
-  gap: 8px
+  gap: 10px
 
   li
     display: flex
@@ -65,13 +76,13 @@ $bg: #fff
     align-items: center
     border: 1px solid $border
     border-radius: 6px
-    padding: 8px 12px
-    font-size: 13px
+    padding: 17px 20px
+    font-size: 16px
     color: $text
     background: #fafafa
 
     span:first-child
-      color: $gray
+      color: #000
       margin-right: 12px
       flex-shrink: 0
       min-width: 100px
