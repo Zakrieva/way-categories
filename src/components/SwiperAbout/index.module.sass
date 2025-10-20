@@ -1,0 +1,88 @@
+/* Контейнер слайдера */
+.wrapp
+  margin-top: 300px
+  position: relative
+  overflow: visible
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 20px
+  @media (min-width: 620px)
+    margin-left: 0
+  
+
+  &::before, &::after
+    display: none
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    pointer-events: none
+    z-index: 2
+    @media (min-width: 620px)
+      display: block
+      width: 90px
+    @media (min-width: 1100px)
+      width: 110px
+  &::before
+    left: 0
+    
+    background: linear-gradient( rgba(0,0,0,0.5))
+  &::after
+    right: 0
+    background: linear-gradient( rgba(0,0,0,0.5))
+
+
+.swiper
+  width: 100%
+  height: 240px
+  @media (min-width: 620px)
+    height: 440px
+  @media (min-width: 1100px)
+    height: 540px
+
+.slide
+  box-sizing: border-box
+  flex-shrink: 0
+  height: 100%
+  overflow: hidden
+  border-radius: 16px
+  
+  @media (min-width: 750px)
+    width: 720px
+    border-radius: 20px
+  @media (min-width: 1100px)
+    width: 880px
+  
+.img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  display: block
+  border-radius: 13px
+  
+    
+
+/* Стрелки */
+:global(.swiper-button-prev),
+:global(.swiper-button-next)
+  width: 36px
+  height: 36px
+  border-radius: 8px
+  color: #fff
+  display: none
+  
+  position: absolute
+  z-index: 99
+  &:after
+    font-size: 16px
+  @media (min-width: 620px)
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+:global(.swiper-button-prev)
+  left: 8px
+:global(.swiper-button-next)
+  right: 8px

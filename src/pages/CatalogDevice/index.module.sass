@@ -1,0 +1,44 @@
+.about
+    position: relative 
+    height: 480px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 60px 16px
+
+    @media ( min-width:750px)
+        height:  510px
+    @media ( min-width:1100px)
+        height:  590px
+    @media ( min-width:1440px  )
+        height:  666px
+    &__bg
+        position: absolute
+        inset: 0
+        border-radius: 24px
+        background:  linear-gradient( rgba(0, 0, 0, 0.2)),url("../../assets/img/catalogDevice/info.jpg" ) center/cover no-repeat
+        z-index: 0
+        filter: brightness(0.85)
+
+  
+    &__card
+        position: relative
+        z-index: 1
+        top: 60%
+        background: #fff
+        border-radius: 12px
+        max-width: 790px
+        padding: 30px 30px
+        text-align: center
+        line-height: 1.6
+        p
+            font-size: 15px
+            margin: 0 auto
+            max-width: 680px
+            @media ( min-width:620px)
+                font-size: 20px
+                
+    &__logo
+        height: 36px
+        height: auto
+        margin-bottom: 24px

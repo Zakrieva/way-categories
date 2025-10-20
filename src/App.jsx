@@ -1,6 +1,8 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Catalog_food from "./pages/Catalog_food";
+import CatalogDevice from "./pages/CatalogDevice";
+import CatalogFood from "./pages/CatalogFood";
+import Contacts from "./pages/Contacts";
 import Home from "./pages/Home/Home";
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
     <div className="App">
       <Header />
       {/* <Home /> */}
-      <Catalog_food />
+      {/* <CatalogFood /> */}
+      {/* <CatalogDevice /> */}
+      <Contacts />
       <Footer />
     </div>
   );
