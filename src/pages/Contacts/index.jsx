@@ -1,98 +1,81 @@
 import React from "react";
 import s from "./index.module.sass";
+import ContactForm from "../../components/ContactForm";
 
-export default function Contacts() {
+const Contacts = () => {
   return (
     <section className={s.contacts}>
       <div className="wrapper">
-        <h1 className={s.title}>Контакты</h1>
-        <p className={s.lead}>
-          Свяжитесь с WayCatering удобным способом: напишите в мессенджер,
-          позвоните или оставьте заявку — мы ответим в рабочее время.
+        <h2 className={s.subtitle}>Контакты</h2>
+        <h1 className={s.title}>Свяжитесь с WayCatering</h1>
+        <p className={s.text}>
+          Вы можете написать нам в удобном мессенджере, позвонить или оставить
+          заявку через форму — мы ответим в рабочее время в ближайшие часы.
         </p>
 
         <div className={s.grid}>
-          {/* Левая колонка */}
-          <div className={s.col}>
-            <div className={s.card}>
-              <h3 className={s.cardTitle}>Реквизиты</h3>
-
-              <div className={s.field}>
-                <div className={s.label}>ИП</div>
-                <div className={s.value}>Магомедов Адам Увайсович</div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>ИНН</div>
-                <div className={s.value}>201045745200</div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>ОГРНИП</div>
-                <div className={s.value}>32120000030880</div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>Email</div>
-                <div className={s.value}>
-                  <a href="mailto:shantilakes@gmail.com">
-                    shantilakes@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className={s.card}>
-              <h3 className={s.cardTitle}>Адреса</h3>
-
-              <div className={s.field}>
-                <div className={s.label}>Юр. адрес</div>
-                <div className={s.value}>г. Грозный, ул. Кошевого д. 60</div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>Факт. адрес</div>
-                <div className={s.value}>
-                  г. Грозный, бульвар Эсамбаева д. 11
-                </div>
-              </div>
-            </div>
+          <div className={s.card}>
+            <h3 className={s.cardTitle}>Реквизиты</h3>
+            <ul className={s.list}>
+              <li>
+                <span>ИП</span>
+                <span>Магомедов Адам Увайсович</span>
+              </li>
+              <li>
+                <span>ИНН</span>
+                <span>201045745200</span>
+              </li>
+              <li>
+                <span>ОГРНИП</span>
+                <span>32120000030880</span>
+              </li>
+              <li>
+                <span>Email</span>
+                <a href="mailto:shantilakes@gmail.com">shantilakes@gmail.com</a>
+              </li>
+            </ul>
           </div>
 
-          {/* Правая колонка */}
-          <div className={s.col}>
-            <div className={s.card}>
-              <h3 className={s.cardTitle}>Быстрые контакты</h3>
-
-              <p className={s.note}>
-                Позвоните или напишите — обсудим задачу и предложим варианты под
-                ваш бюджет и формат события.
-              </p>
-
-              <div className={s.field}>
-                <div className={s.label}>Телефон</div>
-                <div className={s.value}>
-                  <a href="tel:+79899299874">+7 (989) 929-98-74</a>
-                </div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>Email</div>
-                <div className={s.value}>
-                  <a href="mailto:shantilakes@gmail.com">
-                    shantilakes@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className={s.field}>
-                <div className={s.label}>Контактное лицо</div>
-                <div className={s.value}>Хасуев Алу Русланович</div>
-              </div>
-            </div>
+          <div className={s.card}>
+            <h3 className={s.cardTitle}>Быстрые контакты</h3>
+            <p className={s.note}>
+              Позвоните или напишите — мы обсудим задачу и предложим варианты
+              под ваш бюджет и формат события.
+            </p>
+            <ul className={s.list}>
+              <li>
+                <span>Телефон</span>
+                <a href="tel:+79899299874">+7 989 929 98 74</a>
+              </li>
+              <li>
+                <span>Email</span>
+                <a href="mailto:shantilakes@gmail.com">shantilakes@gmail.com</a>
+              </li>
+              <li>
+                <span>Контактное лицо</span>
+                <span>Хасуев Алу Русланович</span>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <div className={s.card}>
+          <h3 className={s.cardTitle}>Адреса</h3>
+          <ul className={s.list}>
+            <li>
+              <span>Юр. адрес:</span>
+              <span>г. Грозный, ул. Кошевого д. 60</span>
+            </li>
+            <li>
+              <span>Факт. адрес:</span>
+              <span>г. Грозный, бульвар Эсамбаева д. 11</span>
+            </li>
+          </ul>
+        </div>
       </div>
+      {/* <ContactForm /> */}
     </section>
   );
-}
+};
+
+export default Contacts;

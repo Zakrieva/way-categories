@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import CatalogDevice from "./pages/CatalogDevice";
@@ -9,10 +10,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Home /> */}
-      {/* <CatalogFood /> */}
-      {/* <CatalogDevice /> */}
-      <Contacts />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catalogFood" element={<CatalogFood />} />
+        <Route path="/catalogDevice" element={<CatalogDevice />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
       <Footer />
     </div>
   );
