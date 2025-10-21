@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,7 +14,6 @@ const SwiperAbout = ({ img1, img2, img3 }) => {
         className={styles.swiper}
         modules={[Autoplay, Navigation]}
         navigation
-        pagination={true}
         centeredSlides={true}
         slidesPerView={2}
         spaceBetween={20}

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.sass";
-
+import { Link } from "react-router-dom";
 const METHODS = ["WhatsApp", "Telegram", "Звонок", "SMS", "Email"];
 
 const BOT_TOKEN = "8485434309:AAGnR6UhiacbSD_Q-k0u_viInqNETIX0vOE";
@@ -166,9 +166,9 @@ const ContactForm = ({ img }) => {
                 />
                 <span>
                   Я прочитал(а) и соглашаюсь с{" "}
-                  <a href="#" target="_blank" rel="noreferrer">
+                  <Link href="#" target="_blank" rel="noreferrer">
                     Политикой конфиденциальности
-                  </a>
+                  </Link>
                 </span>
               </label>
 
