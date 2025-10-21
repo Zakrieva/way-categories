@@ -21,10 +21,10 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className={styles.carts}>
-          <div className={styles.cart}>
+        <div className={styles.cards}>
+          <div className={styles.card}>
             <img className={styles.img} src={img1} alt="" />
-            <div className={styles.cart_info}>
+            <div className={styles.card_info}>
               <h3>Музыкальный фестиваль «Песня года»</h3>
 
               <div className={styles.button}>
@@ -32,9 +32,9 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          <div className={styles.cart}>
+          <div className={styles.card}>
             <img className={styles.img} src={img2} alt="" />
-            <div className={styles.cart_info}>
+            <div className={styles.card_info}>
               <h3>Открытие автосалона китайских производителей</h3>
               <div className={styles.button}>
                 <Button title="Посмотреть" />

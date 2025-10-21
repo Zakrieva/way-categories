@@ -18,7 +18,7 @@ $border: #E9E9EB
   @media (min-width: 620px) 
     text-align: center
 
-/* сетка карточек */
+
 .grid
   display: grid
   grid-template-columns: 1fr
@@ -30,15 +30,13 @@ $border: #E9E9EB
     grid-template-columns: repeat(3, 1fr)
     gap: 60px 33px
 
-/* карточка */
-.card
-  display: grid
-  grid-template-rows: auto auto auto 1fr
- 
-  border-radius: 16px
-  background: #fff
 
-/* верхняя картинка */
+.card
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+
 .thumb
   width: 100%
   display: grid
@@ -90,7 +88,6 @@ $border: #E9E9EB
   color: $muted
   font-size: 13px
 
-/* мелкие правки адаптива */
 
 
 
