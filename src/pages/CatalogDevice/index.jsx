@@ -4,9 +4,11 @@ import logo from "../../assets/svg/logo.svg";
 import SwiperAbout from "../../components/SwiperAbout";
 import Catalog from "../../components/Catalog";
 import data from "../../assets/data/dataDevice";
+import img from "../../assets/img/catalogDevice/img.jpg";
 import img1 from "../../assets/img/catalogDevice/swiper1.jpg";
 import img2 from "../../assets/img/catalogDevice/swiper2.jpg";
 import img3 from "../../assets/img/catalogDevice/swiper3.jpg";
+import ContactForm from "../../components/ContactForm";
 
 const CatalogDevice = () => {
   return (
@@ -28,6 +30,7 @@ const CatalogDevice = () => {
       </div>
       <SwiperAbout img1={img1} img2={img2} img3={img3} />
       <Catalog data={data} />
+      <ContactForm img={img} />
     </div>
   );
 };

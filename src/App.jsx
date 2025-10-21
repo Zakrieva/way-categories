@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import CatalogDevice from "./pages/CatalogDevice";
 import CatalogFood from "./pages/CatalogFood";
 import Contacts from "./pages/Contacts";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 
 function App() {
   return (

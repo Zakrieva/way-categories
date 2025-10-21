@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom"; // добавляем импорт
 import img1 from "../../../assets/img/home/img1.jpg";
 import img2 from "../../../assets/img/home/img2.png";
-import styles from "./index.module.sass";
 import Button from "../../../components/Button";
+import styles from "./index.module.sass";
+
 const Menu = () => {
   return (
     <div className="wrapper">
@@ -16,23 +18,30 @@ const Menu = () => {
         </div>
 
         <div className={styles.carts}>
+          {/* Карточка Меню */}
           <div className={styles.cart}>
-            <img className={styles.img} src={img1} alt="" />
+            <img className={styles.img} src={img1} alt="Меню" />
             <div className={styles.cart_info}>
               <h3>Меню</h3>
               <p>Широкий выбор блюд для любого мероприятия</p>
               <div className={styles.button}>
-                <Button title="Посмотреть" />
+                <Link to="/catalogFood">
+                  <Button title="Посмотреть" />
+                </Link>
               </div>
             </div>
           </div>
+
+          {/* Карточка Аренда */}
           <div className={styles.cart}>
-            <img className={styles.img} src={img2} alt="" />
+            <img className={styles.img} src={img2} alt="Аренда оборудования" />
             <div className={styles.cart_info}>
               <h3>Аренда оборудования</h3>
               <p>Профессиональное оборудование для кейтеринга</p>
               <div className={styles.button}>
-                <Button title="Посмотреть" />
+                <Link to="/catalogDevice">
+                  <Button title="Посмотреть" />
+                </Link>
               </div>
             </div>
           </div>

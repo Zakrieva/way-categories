@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./index.module.sass";
 import ContactForm from "../../components/ContactForm";
-
+import img from "../../assets/img/imgContactPage.png";
 const Contacts = () => {
   return (
     <section className={s.contacts}>
@@ -73,7 +73,7 @@ const Contacts = () => {
           </ul>
         </div>
       </div>
-      {/* <ContactForm /> */}
+      <ContactForm img={img} />
     </section>
   );
 };
