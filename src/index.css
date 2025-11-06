@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Golos Text";
-  src: url("../src/assets/fonts/GolosText-Regular.woff2");
+  src: url("../src/assets/fonts/GolosText-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -85,4 +85,47 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Анимация загрузки */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Оптимизация производительности */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* iOS Safari специфичные оптимизации */
+@supports (-webkit-touch-callout: none) {
+  /* iOS Safari */
+  img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  /* Исправление проблем с background-image на iOS */
+  .ios-background-fix {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+/* Дополнительные оптимизации для мобильных устройств */
+@media (max-width: 768px) {
+  img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }

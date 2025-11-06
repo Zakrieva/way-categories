@@ -31,7 +31,7 @@ const Contacts = () => {
               </li>
               <li>
                 <span>Email</span>
-                <a href="mailto:shantilakes@gmail.com">shantilakes@gmail.com</a>
+                <a href="mailto:shantilcakes@gmail.com">shantilcakes@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -45,11 +45,11 @@ const Contacts = () => {
             <ul className={s.list}>
               <li>
                 <span>Телефон</span>
-                <a href="tel:+79899299874">+7 989 929 98 74</a>
+                <a href="tel:+79287391414">8 928 739 14 14</a>
               </li>
               <li>
                 <span>Email</span>
-                <a href="mailto:shantilakes@gmail.com">shantilakes@gmail.com</a>
+                <a href="mailto:shantilcakes@gmail.com">shantilcakes@gmail.com</a>
               </li>
               <li>
                 <span>Контактное лицо</span>

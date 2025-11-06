@@ -1,9 +1,18 @@
 import React from "react";
 import styles from "./index.module.sass";
+import aboutImg from "../../../assets/img/about.jpg";
 
 const About = () => {
   return (
     <div className={styles.about}>
+      {/* Фоновое изображение для iOS Safari совместимости */}
+      <img 
+        src={aboutImg} 
+        alt="WayCatering background" 
+        className={styles.backgroundImage}
+        loading="eager"
+      />
+      <div className={styles.overlay}></div>
       <div className={styles.title}>
         <h1>WayCatering: Вкус и стиль для любого события!</h1>
         <p>
@@ -11,7 +20,7 @@ const About = () => {
           обслуживание, а также поможет подобрать индивидуальное меню и
           концепцию кейтеринга для вашего мероприятия. Мы стремимся к тому,
           чтобы каждое событие, на котором мы оказываем свои услуги, было
-          запоминающимся и безупречным для всех его участников. 
+          запоминающимся и безупречным для всех его участников. 
         </p>
       </div>
     </div>

@@ -48,7 +48,7 @@ const Header = () => {
           </Link>
         </nav>
 
-        <button className={styles.button}>Связаться</button>
+        <a className={styles.button} href="tel:+79287391414">8 928 739 14 14</a>
       </div>
     </header>
   );
