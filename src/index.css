@@ -64,6 +64,11 @@ section {
 body {
   font-size: 18px;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .wrapper {
   padding: 0 16px;
@@ -89,8 +94,12 @@ code {
 
 /* Анимация загрузки */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Оптимизация производительности */
@@ -112,7 +121,7 @@ img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   /* Исправление проблем с background-image на iOS */
   .ios-background-fix {
     -webkit-transform: translateZ(0);
