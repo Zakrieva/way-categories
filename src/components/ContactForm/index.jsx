@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const METHODS = ["WhatsApp", "Telegram", "Звонок", "SMS", "Email"];
 
-const BOT_TOKEN = "8485434309:AAGnR6UhiacbSD_Q-k0u_viInqNETIX0vOE";
-const CHAT_ID = "773413595";
+const BOT_TOKEN = "55";
+const CHAT_ID = "11";
 const API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
 const ContactForm = ({ img }) => {
